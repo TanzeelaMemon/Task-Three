@@ -57,3 +57,11 @@
   border-radius: 8px;
   margin-bottom: 12px; 
 }
+.head-row{
+  background: #F4E6EA;
+}
+.head-para{
+  color:#161111;
+  font-weight: 600;
+  font-size: 16px;
+}
