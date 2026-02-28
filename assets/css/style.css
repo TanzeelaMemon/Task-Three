@@ -65,10 +65,30 @@
   font-weight: 600;
   font-size: 16px;
 }
+.grid-btn {
+  background: #C6273A;   
+  color: white;        
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  width: 50px;
+  text-decoration: none;
+  border:none;
+}
 @media (max-width: 575px) {
+  .book-call-btn {
+    font-size: 14px;   
+    min-height: 40px;  
+    max-width: 120px;     
+    padding: 0 15px;      
+  }
+  .logo-image {
+    width: 100px;        
+    height: auto;       
+  }
   .para-1 {
-    font-size: 18px;
-    /* text-align: center;
-    margin-top: 20px; */
+    font-size: 16px;
   }
 }
