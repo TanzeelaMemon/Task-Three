@@ -77,6 +77,68 @@
   text-decoration: none;
   border:none;
 }
+.input-group-text {
+    background: transparent !important;
+    border-left: none !important;
+}
+.input-group, .form-control{
+  border-right: none;
+}
+.calendar-heading{
+  font-size: 18px;
+  font-weight: 700;
+  color:#413E3E;
+}
+.calendar-month{
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.12px;
+  color:#413E3E;
+}
+.calendar-day{
+  font-weight: 600;
+  size: 16px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  color:#413E3E;
+}
+.calendar-date{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.22px;
+  color:#161111;
+}
+.date_time{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color:#413E3E;
+}
+.confirm-btn{
+  background: #C6273A;
+  color:white;
+  border:none;
+  max-width: 100%;
+  border-radius: 8px;
+  padding:10px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+}
+.confirmed_modal_heading{
+  font-size: 18px;
+  font-weight: 700;
+  color:#161111;
+}
+.confirmed_modal_para1{
+  color:#413E3E;
+  font-weight: 400;
+  font-size: 16px;
+}
+.confirmed_modal_para2{
+  color:#161111;
+}
 @media (max-width: 575px) {
   .book-call-btn {
     font-size: 14px;   
