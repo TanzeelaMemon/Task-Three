@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Traclin Grid view</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -232,88 +233,34 @@
                     <div class="modal-body">
                         <div class="d-flex justify-content-center"><img src="assets/images/fulllogo.svg"></div>
                         <p class="calendar-heading mt-4">Select a date & Time</p>
-                        <p class="text-center fw-bold calendar-month"><img src="assets/images/Vector.svg" class="me-4">March 2026</p>
-                        <div class="row header fw-bold text-center">
-                            <div class="col calendar-day">SUN</div>
-                            <div class="col calendar-day">MON</div>
-                            <div class="col calendar-day">TUE</div>
-                            <div class="col calendar-day">WED</div>
-                            <div class="col calendar-day">THU</div>
-                            <div class="col calendar-day">FRI</div>
-                            <div class="col calendar-day">SAT</div>
-                        </div>
-                        <div class="row text-center mt-3">
-                            <div class="col text-muted calendar-date">28</div>
-                            <div class="col text-muted calendar-date">29</div>
-                            <div class="col text-muted calendar-date">30</div>
-                            <div class="col text-muted calendar-date">1</div>
-                            <div class="col calendar-date">2</div>
-                            <div class="col calendar-date">3</div>
-                            <div class="col calendar-date">4</div>
-                        </div>
-                        <div class="row text-center mt-3">
-                            <div class="col calendar-date">5</div>
-                            <div class="col calendar-date">6</div>
-                            <div class="col calendar-date">7</div>
-                            <div class="col calendar-date">8</div>
-                            <div class="col calendar-date">9</div>
-                            <div class="col calendar-date">10</div>
-                            <div class="col calendar-date">11</div>
-                        </div>
-                        <div class="row text-center mt-3">
-                            <div class="col calendar-date">12</div>
-                            <div class="col calendar-date">13</div>
-                            <div class="col calendar-date">14</div>
-                            <div class="col calendar-date">15</div>
-                            <div class="col calendar-date">16</div>
-                            <div class="col calendar-date">17</div>
-                            <div class="col calendar-date">18</div>
-                        </div>
-                        <div class="row text-center mt-3">
-                            <div class="col calendar-date">19</div>
-                            <div class="col calendar-date">20</div>
-                            <div class="col calendar-date">21</div>
-                            <div class="col calendar-date">22</div>
-                            <div class="col calendar-date">23</div>
-                            <div class="col calendar-date">24</div>
-                            <div class="col calendar-date">25</div>
-                        </div>
-                        <div class="row text-center mt-3">
-                            <div class="col calendar-date">26</div>
-                            <div class="col calendar-date">27</div>
-                            <div class="col calendar-date">28</div>
-                            <div class="col calendar-date">29</div>
-                            <div class="col calendar-date">30</div>
-                            <div class="col calendar-date">31</div>
-                            <div class="col text-muted calendar-date">1</div>
-                        </div>
-                        <div class="row mb-3 mt-4">
-                            <div class="col-lg-8 col-md-12 col-sm-12">
-                                <p class="date_time"><img src="assets/images/Group.svg" class="me-2">Asia/Dhaka (10:30am)<image src="assets/images/arrow-down.svg">
-                                </p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label for="startDate" class="mb-2 fw-bold">Start Date</label>
+                                <input type="date" class="form-control" id="startDate" required>
                             </div>
-                        </div>
-                        <!-- <div class="row">
-                        <div class="col-lg-9 col-md-12 col-sm-12">
-                            <select class="form-select">
-                                <option disabled selected>10:30</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-3 col-md-12 col-sm-12 mt-3 mt-lg-0">
-                            <select class="form-select">
-                                <option value="AM">AM</option>
-                                <option value="PM">PM</option>
-                            </select>
-                        </div>
-                    </div> -->
-                        <div class="row mb-3 mt-4 align-items-center">
-                            <!-- Time Dropdown (hour:minute) -->
-                            <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
-                                <select name="time" class="form-select" required>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <label for="startTime" class="mb-2 fw-bold">Start Time</label>
+                                <select class="form-select" id="startTime" required>
                                     <option value="" selected disabled>Select Time</option>
-                                    <option value="08:00">08:00</option>
-                                    <option value="08:30">08:30</option>
-                                    <option value="09:00">09:00</option>
+                                    <option value="08:00">12:00</option>
+                                    <option value="08:00">12:30</option>
+                                    <option value="08:00">01:00</option>
+                                    <option value="08:00">01:30</option>
+                                    <option value="08:00">02:00</option>
+                                    <option value="08:00">02:30</option>
+                                    <option value="08:00">03:00</option>
+                                    <option value="08:00">03:30</option>
+                                    <option value="08:30">04:00</option>
+                                    <option value="09:00">04:30</option>
+                                    <option value="09:00">05:00</option>
+                                    <option value="09:00">05:30</option>
+                                    <option value="09:00">06:00</option>
+                                    <option value="09:30">06:30</option>
+                                    <option value="09:30">07:00</option>
+                                    <option value="09:30">07:30</option>
+                                    <option value="09:30">08:00</option>
+                                    <option value="09:30">08:30</option>
+                                    <option value="09:30">09:00</option>
                                     <option value="09:30">09:30</option>
                                     <option value="10:00">10:00</option>
                                     <option value="10:30">10:30</option>
@@ -321,50 +268,35 @@
                                     <option value="11:30">11:30</option>
                                     <option value="12:00">12:00</option>
                                     <option value="12:30">12:30</option>
-                                    <option value="01:00">01:00</option>
-                                    <option value="01:30">01:30</option>
-                                    <option value="02:00">02:00</option>
-                                    <option value="02:30">02:30</option>
-                                    <option value="03:00">03:00</option>
-                                    <option value="03:30">03:30</option>
-                                    <option value="04:00">04:00</option>
-                                    <option value="04:30">04:30</option>
-                                    <option value="05:00">05:00</option>
-                                    <option value="05:30">05:30</option>
-                                    <option value="06:00">06:00</option>
-                                    <option value="06:30">06:30</option>
-                                </select>
-                            </div>
-                            <!-- AM/PM Dropdown -->
-                            <div class="col-lg-3 col-md-6 col-sm-6 mb-2">
-                                <!-- <label for="ampm" class="form-label fw-bold">AM/PM</label> -->
-                                <select class="form-select" required>
-                                    <option value="">Select</option>
-                                    <option value="AM">AM</option>
-                                    <option value="PM">PM</option>
-                                </select>
-                            </div>
-                            <!-- Timezone Dropdown -->
-                            <div class="col-lg-6 col-md-12 col-sm-12 mb-2">
-                                <!-- <label for="timezone" class="form-label fw-bold">Select Time Zone</label> -->
-                                <select id="timezone" class="form-select" required>
-                                    <option value="" selected>Select Time Zone</option>
-                                    <option value="Asia/Dhaka">Asia/Dhaka</option>
-                                    <option value="Asia/Kolkata">Asia/Kolkata</option>
-                                    <option value="Asia/Tokyo">Asia/Tokyo</option>
-                                    <option value="America/New_York">America/New_York</option>
-                                    <option value="Europe/London">Europe/London</option>
-                                    <option value="Europe/Berlin">Europe/Berlin</option>
-                                    <option value="Australia/Sydney">Australia/Sydney</option>
+                                    <option value="13:00">13:00</option>
+                                    <option value="13:30">13:30</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="14:30">14:30</option>
+                                    <option value="15:00">15:00</option>
+                                    <option value="15:30">15:30</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="16:30">16:30</option>
+                                    <option value="17:00">17:00</option>
+                                    <option value="17:30">17:30</option>
+                                    <option value="18:00">18:00</option>
+                                    <option value="18:30">18:30</option>
+                                    <option value="19:00">19:00</option>
+                                    <option value="19:30">19:30</option>
+                                    <option value="20:00">20:00</option>
+                                    <option value="20:30">20:30</option>
+                                    <option value="21:00">21:00</option>
+                                    <option value="21:30">21:30</option>
+                                    <option value="22:00">22:00</option>
+                                    <option value="22:30">22:30</option>
+                                    <option value="23:00">23:00</option>
+                                    <option value="23:30">23:30</option>
+                                    <option value="23:59">23:59</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row mt-5">
                             <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                                 <button type="button" class="confirm-btn" id="confirmStep1">Confirm</button>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-6 col-lg-4">
-                                <button class="confirm-btn" data-bs-dismiss="modal">Back</button>
                             </div>
                         </div>
                     </div>
@@ -394,17 +326,27 @@
                         </div>
                         <div class="row mb-3">
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <input type="number" class="form-control" placeholder="Hourly Rate" required>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text">
+                                        <i class="bi bi-currency-dollar"></i>
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Hourly Rate">
+                                </div>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <div class="col-lg-12 col-md-12 col-sm-12">
-                                <select name="paymentoption" class="form-select" required>
-                                    <option value="" disabled selected>Select Payment Option</option>
-                                    <option value="Credit Card">Credit Card</option>
-                                    <option value="PayPal">PayPal</option>
-                                    <option value="Bank Transfer">Bank Transfer</option>
-                                </select>
+                                <div class="input-group mb-3">
+                                    <select name="paymentoption" class="form-select" required>
+                                        <option value="" disabled selected>Select Payment Option</option>
+                                        <option value="Credit Card">Credit Card</option>
+                                        <option value="PayPal">PayPal</option>
+                                        <option value="Bank Transfer">Bank Transfer</option>
+                                    </select>
+                                    <span class="input-group-text" data-bs-toggle="tooltip" data-bs-placement="top" title="Choose your preferred payment method.">
+                                        <i class="bi bi-info-circle"></i>
+                                    </span>
+                                </div>
                             </div>
                         </div>
                         <div class="row">

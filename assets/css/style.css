@@ -21,12 +21,6 @@
 .book-call-btn:hover {
   cursor: pointer;
 }
-.custom-card {
-  height: 370px;
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-}
 .card-body {
   flex: 1;
   display: flex;
@@ -51,11 +45,12 @@
   margin-top: auto;
 }
 .card-img-top {
-  width: 100%;       
+  width: 90%;       
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 12px; 
+  margin: 12px auto 12px auto; 
+  display: block;
 }
 .head-row{
   background: #F4E6EA;
@@ -76,13 +71,6 @@
   width: 50px;
   text-decoration: none;
   border:none;
-}
-.input-group-text {
-    background: transparent !important;
-    border-left: none !important;
-}
-.input-group, .form-control{
-  border-right: none;
 }
 .calendar-heading{
   font-size: 18px;
@@ -154,6 +142,16 @@
     font-size: 16px;
   }
 }
+.bi-info-circle:hover{
+  cursor: pointer;
+}
+.tooltip-inner{
+  background: #C6273A !important;
+  color:white !important;
+}
+.tooltip.bs-tooltip-top .tooltip-arrow::before{
+  border-top-color:#C6273A !important;
+}
 /* Chrome, Safari, Edge, Opera */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -163,5 +161,16 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Firefox */
 input[type=number] {
-    -moz-appearance: textfield;
+    -moz-appearance: textfield;background-color: rgba(28, 117, 188, 0.05); 
+  border-color: #1C75BC;                     
+  box-shadow: none;                          
+  outline: none;  
+}
+.form-control, .form-select{
+  background-color: rgba(28, 117, 188, 0.05);
+}
+.form-control:focus, .form-select:focus{
+   background-color: rgba(28, 117, 188, 0.05);
+   border-color: #C6273A;
+   box-shadow: none;
 }
